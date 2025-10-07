@@ -20,8 +20,8 @@ Answering these questions will help reveal nuanced insights into the labor marke
 
 ## Team
 
-- **Project Manager & Data Scientist (xxx):** As the lead, responsible for overseeing the project lifecycle including defining the project scope, acquiring datasets, performing data cleaning and integration, developing prediction models, and compiling the final report. This role will also focus on documentation, version control management, and ensuring reproducibility.
-- **Lead Data Engineer (xxx):** This role, if applicable, will support managing data extraction processes, developing storage schemes, implementing automated data workflows, and assisting with maintaining data quality and provenance tracking.
+- **Project Manager & Data Scientist (Calista):** As the lead, responsible for overseeing the project lifecycle including defining the project scope, acquiring datasets, performing data cleaning and integration, developing prediction models, and compiling the final report. This role will also focus on documentation, version control management, and ensuring reproducibility.
+- **Lead Data Engineer (Faith):** This role, if applicable, will support managing data extraction processes, developing storage schemes, implementing automated data workflows, and assisting with maintaining data quality and provenance tracking.
 - **GitHub Participation:** All collaborators will use Git and GitHub for version control and project management. Each member will have assigned responsibilities reflected transparently through commit messages, pull requests, and issue tracking to demonstrate individual contributions. The repository will be organized to facilitate straightforward navigation and collaboration.
 
 ## Datasets
@@ -42,16 +42,16 @@ Utilizing these datasets ensures a diverse data landscape encompassing varying f
 
 | Week            | Task                                                                                           | Responsible        | Due Date            |
 |-----------------|------------------------------------------------------------------------------------------------|--------------------|---------------------|
-| Week 3 (Oct 7)  | Complete and submit the full Project Plan (ProjectPlan.md) in the GitHub repo and Canvas.     | xxx  | Oct 7, 2025         |
-| Week 4-6        | Acquire job market datasets as described in the plan, thoroughly document methods, licenses, and access. | xxx  | Oct 14-28, 2025     |
-| Week 6-8        | Design and implement the file/data storage strategy. Establish clear directory naming, record conventions. | xxx | Oct 28-Nov 11, 2025 |
-| Week 7-9        | Data assessment: profile, quality check, initial cleaning (missing values, obvious outliers). Document issues found. | xxx  | Nov 4-18, 2025      |
-| Week 10         | Submit Interim Status Report (StatusReport.md). Include: project status, updated tasks timeline, and GitHub repo evidence. | xxx  | Nov 11, 2025        |
-| Week 11-12      | Conduct in-depth data integration and enrichment: join datasets, transform features, address semantic mismatches. | xxx  | Nov 18-25, 2025     |
-| Week 12-13      | Develop, train, and validate the AI models for salary prediction and trend analysis.           | xxx  | Nov 25-Dec 2, 2025  |
-| Week 13-14      | Automate workflow (Python scripts, Makefile/Snakemake), start compiling end-to-end provenance logs and metadata. | xxx  | Dec 2-9, 2025       |
-| Week 14         | Document reproducibility instructions, update all data documentation, finalize visualizations/analysis outputs. | xxx  | Dec 9, 2025         |
-| Week 15 (Dec 10)| Final project report and artifacts submitted on GitHub, tagged release, and Canvas submission. | xxx  | Dec 10, 2025        |
+| Week 3 (Oct 7)  | Complete and submit the full Project Plan (ProjectPlan.md) in the GitHub repo and Canvas.     | Calista & Faith  | Oct 7, 2025         |
+| Week 4-6        | Acquire job market datasets as described in the plan, thoroughly document methods, licenses, and access. | Calista  | Oct 14-28, 2025     |
+| Week 6-8        | Design and implement the file/data storage strategy. Establish clear directory naming, record conventions. | Calista | Oct 28-Nov 11, 2025 |
+| Week 7-9        | Data assessment: profile, quality check, initial cleaning (missing values, obvious outliers). Document issues found. | Faith  | Nov 4-18, 2025      |
+| Week 10         | Submit Interim Status Report (StatusReport.md). Include: project status, updated tasks timeline, and GitHub repo evidence. | Faith  | Nov 11, 2025        |
+| Week 11-12      | Conduct in-depth data integration and enrichment: join datasets, transform features, address semantic mismatches. | Calista  | Nov 18-25, 2025     |
+| Week 12-13      | Develop, train, and validate the AI models for salary prediction and trend analysis.           | Faith  | Nov 25-Dec 2, 2025  |
+| Week 13-14      | Automate workflow (Python scripts, Makefile/Snakemake), start compiling end-to-end provenance logs and metadata. | Faith  | Dec 2-9, 2025       |
+| Week 14         | Document reproducibility instructions, update all data documentation, finalize visualizations/analysis outputs. | Calista  | Dec 9, 2025         |
+| Week 15 (Dec 10)| Final project report and artifacts submitted on GitHub, tagged release, and Canvas submission. | Both  | Dec 10, 2025        |
 
 ## Data Lifecycle Model
 
