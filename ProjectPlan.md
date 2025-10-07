@@ -21,7 +21,7 @@ Answering these questions will help reveal nuanced insights into the labor marke
 ## Team
 
 - **Project Manager & Data Scientist (Calista):** As the lead, responsible for overseeing the project lifecycle including defining the project scope, acquiring datasets, performing data cleaning and integration, developing prediction models, and compiling the final report. This role will also focus on documentation, version control management, and ensuring reproducibility.
-- **Lead Data Engineer (Faith):** This role, if applicable, will support managing data extraction processes, developing storage schemes, implementing automated data workflows, and assisting with maintaining data quality and provenance tracking.
+- **Lead Data Engineer (Faith):** This role will support managing data extraction processes, developing storage schemes, implementing automated data workflows, and assisting with maintaining data quality and provenance tracking.
 - **GitHub Participation:** All collaborators will use Git and GitHub for version control and project management. Each member will have assigned responsibilities reflected transparently through commit messages, pull requests, and issue tracking to demonstrate individual contributions. The repository will be organized to facilitate straightforward navigation and collaboration.
 
 ## Datasets
