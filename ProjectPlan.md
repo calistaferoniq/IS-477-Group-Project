@@ -36,7 +36,7 @@ The project will employ at least two heterogeneous datasets to meet the course c
    https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025
    This dataset aggregates salary data, market growth trends, and detailed job descriptions across various geographical regions and industries with a focus on AI and emerging technologies. It is available in mixed JSON and CSV formats, obtained through direct download links. This dataset facilitates comparative analyses of job markets, salary distributions, and adoption rates worldwide.
 
-Utilizing these datasets ensures a diverse data landscape encompassing varying file formats and acquisition methods (API vs. direct download), supporting robust data integration experiments and comprehensive analysis relevant to the AI job market.
+Both of the datasets are synthetically designed to match real-world trends on AI adoption and job market. Both are in the public domain and intended to be used for educational purposes. While we did explore datasets from potentially more reliable sources, we did not find any widely available datasets that were appropriate for use in our research context. As such, these datasets with realistic insights from Kaggle were the best alternative solution. However, this does mean that the findings from our analysis likely can not be generalized for real-world application, but it can provide overarching insights into broader AI adoption and job market trends.
 
 ## Timeline
 
@@ -137,8 +137,6 @@ Expected constraints include:
 
 ## Gaps and Needs
 
-- Seeking expert feedback on selecting and tuning AI models most suitable for salary prediction tasks.
-- Assistance addressing schema conflicts or anomalies during dataset integration.
-- Advice on ethical best practices if unexpected sensitive information arises.
-- Input on designing effective visualizations to communicate complex job market trends.
-- Continued improvement of workflow automation and documentation for seamless reproduction.
+- Identify optimal workflow automation methods utilizing appropriate tools
+- Compiling end-to-end provenance logs and metadata
+- Assistance with documentation for project reproducibility 
