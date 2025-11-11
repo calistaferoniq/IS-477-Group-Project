@@ -8,3 +8,7 @@
 
 # Large temp outputs (keep results we want to grade)
 /results/tmp/
+
+# Python
+__pycache__/
+*.pyc
