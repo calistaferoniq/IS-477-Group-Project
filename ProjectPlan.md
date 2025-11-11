@@ -10,11 +10,9 @@ The motivation behind this project stems from the rapidly evolving AI landscape 
 
 This project will address the following core research questions:
 
-- How is AI adoption affecting the availability and type of jobs within different industries?
-- Are there significant salary disparities between AI-related roles and traditional jobs across regions and sectors?
-- How accurately can AI models predict salary ranges based on job descriptions, industry sectors, and geographical location?
 - What are the primary job attributes and external factors that influence salary levels and job availability in an AI-driven economy?
-- How do salary trends and job availabilities compare between countries with varying degrees of AI technology adoption?
+- How accurately can AI models predict salary ranges based on job descriptions, industry sectors, and geographical location?
+- How do salary trends and job availabilities compare across varying degrees of AI technology adoption?
 
 Answering these questions will help reveal nuanced insights into the labor market shifts prompted by AI, providing practical guidance for stakeholders in career planning and organizational strategy.
 
