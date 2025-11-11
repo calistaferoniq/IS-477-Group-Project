@@ -1,1 +1,10 @@
+# OS/editor junk
+.DS_Store
+.ipynb_checkpoints/
 
+# Raw data (we keep acquisition scripts & hashes instead)
+/data/raw/*
+!/data/raw/README.md
+
+# Large temp outputs (keep results we want to grade)
+/results/tmp/
