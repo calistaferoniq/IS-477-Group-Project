@@ -1,4 +1,4 @@
-timestamp_utc=2025-11-11T19:00:32.314925Z
+timestamp_utc=2025-11-11T18:49:48.687346Z
 source=kaggle:uom190346a/ai-powered-job-market-insights
 output=data/raw/ai_job_market_insights.csv
 Copied existing repo file into data/raw for standardized layout.
