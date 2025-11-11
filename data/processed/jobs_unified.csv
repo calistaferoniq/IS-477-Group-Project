@@ -1,0 +1,21 @@
+Job_Title,Salary_USD,Education_Required,Years_Experience,AI_Adoption_Level,Automation_Risk,Remote_Friendly,Job_Growth_Projection,Match_Type
+data scientist,115819.00833333333,Bachelor,6.3375,Low,Low,Yes,Decline,Exact
+ai product manager,114680.90982503365,Master,6.086137281292059,High,High,Yes,Growth,Approximate (100.0)
+ai research scientist,117897.92592592593,Master,6.4034391534391535,Low,Low,Yes,Decline,Approximate (78.26086956521739)
+ai software engineer,114273.20153061225,Bachelor,6.2270408163265305,Low,High,No,Growth,Approximate (100.0)
+ai specialist,120570.75824175825,Master,6.561813186813187,Medium,Medium,Yes,Decline,Approximate (86.95652173913044)
+data engineer,115970.72096128171,Bachelor,6.289719626168225,Low,High,No,Growth,Approximate (76.19047619047619)
+machine learning researcher,112621.74752475247,Bachelor,6.094059405940594,Low,High,No,Growth,Approximate (86.95652173913044)
+nlp engineer,112670.93700787402,Master,5.982939632545932,Low,High,No,Growth,Approximate (80.0)
+principal data scientist,116305.21934604905,PhD,6.128065395095367,Low,Low,Yes,Decline,Approximate (100.0)
+research scientist,116066.50269541779,Bachelor,6.264150943396227,Low,Low,Yes,Decline,Approximate (78.26086956521739)
+ai architect,117436.51361867704,Associate,6.498054474708171,,,,,Unmatched
+ai consultant,113671.87073863637,Associate,6.099431818181818,,,,,Unmatched
+autonomous systems engineer,111396.55727155728,PhD,6.088803088803089,,,,,Unmatched
+computer vision engineer,113472.70718232045,PhD,5.954419889502763,,,,,Unmatched
+data analyst,111321.18050065877,Bachelor,5.956521739130435,,,,,Unmatched
+deep learning engineer,113725.63231197772,Bachelor,6.075208913649025,,,,,Unmatched
+head of ai,118542.96862745097,Bachelor,6.5058823529411764,,,,,Unmatched
+machine learning engineer,118827.91968911917,Associate,6.72279792746114,,,,,Unmatched
+ml ops engineer,115431.33517241379,Bachelor,6.2924137931034485,,,,,Unmatched
+robotics engineer,116470.79314888011,Master,6.47562582345191,,,,,Unmatched
