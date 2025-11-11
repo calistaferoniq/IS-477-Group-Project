@@ -1,0 +1,12 @@
+,Job_Title,Industry,Company_Size,Location,AI_Adoption_Level,Automation_Risk,Required_Skills,Salary_USD,Remote_Friendly,Job_Growth_Projection
+count,500,500,500,500,500,500,500,500.0,500,500
+unique,10,10,3,10,3,3,10,,2,3
+top,Data Scientist,Manufacturing,Small,San Francisco,Medium,Medium,Python,,Yes,Growth
+freq,62,58,171,62,179,173,60,,251,169
+mean,,,,,,,,91222.39097411344,,
+std,,,,,,,,20504.291453477774,,
+min,,,,,,,,31969.52634612842,,
+25%,,,,,,,,78511.51486274059,,
+50%,,,,,,,,91998.19528620754,,
+75%,,,,,,,,103971.2820923537,,
+max,,,,,,,,155209.82161382848,,
