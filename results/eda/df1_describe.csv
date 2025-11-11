@@ -1,0 +1,12 @@
+,job_id,job_title,salary_usd,salary_currency,experience_level,employment_type,company_location,company_size,employee_residence,remote_ratio,required_skills,education_required,years_experience,industry,posting_date,application_deadline,job_description_length,benefits_score,company_name
+count,15000,15000,15000.0,15000,15000,15000,15000,15000,15000,15000.0,15000,15000,15000.0,15000,15000,15000,15000.0,15000.0,15000
+unique,15000,20,,3,4,4,20,3,20,,13663,4,,15,486,543,,,16
+top,AI00001,Machine Learning Researcher,,USD,MI,FT,Germany,S,Sweden,,"Python, TensorFlow, PyTorch",Bachelor,,Retail,2024-07-05,2025-01-05,,,TechCorp Inc
+freq,1,808,,11957,3781,3812,814,5007,790,,17,3789,,1063,51,47,,,980
+mean,,,115348.96513333333,,,,,,,49.483333333333334,,,6.2532,,,,1503.3147333333334,7.504273333333334,
+std,,,60260.940438248086,,,,,,,40.81271167235962,,,5.5457677673467325,,,,576.1270832932631,1.4508696496026896,
+min,,,32519.0,,,,,,,0.0,,,0.0,,,,500.0,5.0,
+25%,,,70179.75,,,,,,,0.0,,,2.0,,,,1003.75,6.2,
+50%,,,99705.0,,,,,,,50.0,,,5.0,,,,1512.0,7.5,
+75%,,,146408.5,,,,,,,100.0,,,10.0,,,,2000.0,8.8,
+max,,,399095.0,,,,,,,100.0,,,19.0,,,,2499.0,10.0,
