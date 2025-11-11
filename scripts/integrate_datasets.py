@@ -2,6 +2,8 @@
 import pandas as pd
 from pathlib import Path
 from rapidfuzz import process, fuzz
+from util_hash import write_sha256, write_acquisition_log
+
 
 csv_path1 = Path("data/raw/ai_job_dataset.csv")
 csv_path2 = Path("data/raw/ai_job_market_insights.csv")
@@ -116,6 +118,17 @@ output_path = processed_dir / "jobs_unified.csv"
 final_with_unmatched.to_csv(output_path, index=False)
 
 print("Wrote processed file to:", output_path)
+
+# Checksum
+checksum = write_sha256(str(output_path))
+print("SHA256 checksum:", checksum)
+
+write_acquisition_log(
+    path=str(output_path),
+    source_slug="integration_pipeline",
+    note="Integrated df1 and df2 with exact + fuzzy matching."
+)
+
 
 
 
