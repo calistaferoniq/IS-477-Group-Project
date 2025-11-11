@@ -11,7 +11,6 @@ path2 = kagglehub.dataset_download("uom190346a/ai-powered-job-market-insights")
 print("Path to dataset files:", path1)
 print("Path to dataset files:", path2)
 
-# %%
 file_path1 = os.path.join(path1, "ai_job_dataset.csv")
 file_path2 = os.path.join(path2, "ai_job_market_insights.csv")
 
@@ -19,26 +18,10 @@ file_path2 = os.path.join(path2, "ai_job_market_insights.csv")
 df1 = pd.read_csv(file_path1)
 df2 = pd.read_csv(file_path2)
 
-# %%
-df1.head()
-
-# %%
-df2.head()
-
-# %% [markdown]
 # Datasets are synthetically created so we don't anticipate any missing values or data inconsistencies which is reflected below.
 
-# %%
-df1.isna().sum()
-
-# %%
-df2.isna().sum()
-
-# %% [markdown]
 # # Integrate Datasets with exact matching and fuzzy matching
 
-# %%
-import pandas as pd
 from rapidfuzz import process, fuzz
 
 # Raw data loaded above (df1 and df2)
@@ -144,6 +127,7 @@ final_with_unmatched.to_csv("jobs_unified.csv", index=False)
 # %%
 df_integrated = pd.read_csv("jobs_unified.csv")
 df_integrated
+
 
 
 
