@@ -1,9 +1,9 @@
 # Integration schema (draft)
 
 ## Raw sources
-- 'ai_job_dataset.csv' (df1)  
+- 'data/raw/ai_job_dataset.csv' (df1)  
   Columns: `job_id, job_title, salary_usd, salary_currency, experience_level, employment_type, company_location, company_size, employee_residence, remote_ratio, required_skills, education_required, years_experience, industry, posting_date, application_deadline, job_description_length, benefits_score, company_name`
-- 'ai_job_market_insights.csv' (df2)  
+- 'data/raw/ai_job_market_insights.csv' (df2)  
   Columns: `Job_Title, Industry, Company_Size, Location, AI_Adoption_Level, Automation_Risk, Required_Skills, Salary_USD, Remote_Friendly, Job_Growth_Projection`
 
 ## Unified table (`jobs_unified`)
