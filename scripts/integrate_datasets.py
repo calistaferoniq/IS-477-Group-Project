@@ -1,28 +1,15 @@
 # Imports
-import kagglehub
-import os
 import pandas as pd
+from pathlib import Path
+from rapidfuzz import process, fuzz
 
-# %%
-# Download latest version
-path1 = kagglehub.dataset_download("bismasajjad/global-ai-job-market-and-salary-trends-2025")
-path2 = kagglehub.dataset_download("uom190346a/ai-powered-job-market-insights")
-
-print("Path to dataset files:", path1)
-print("Path to dataset files:", path2)
-
-file_path1 = os.path.join(path1, "ai_job_dataset.csv")
-file_path2 = os.path.join(path2, "ai_job_market_insights.csv")
-
+csv_path1 = Path("data/raw/ai_job_dataset.csv")
+csv_path2 = Path("data/raw/ai_job_market_insights.csv")
 # Load the dataset into a pandas DataFrame (example for a CSV file)
-df1 = pd.read_csv(file_path1)
-df2 = pd.read_csv(file_path2)
-
-# Datasets are synthetically created so we don't anticipate any missing values or data inconsistencies which is reflected below.
+df1 = pd.read_csv(csv_path1)
+df2 = pd.read_csv(csv_path2)
 
 # # Integrate Datasets with exact matching and fuzzy matching
-
-from rapidfuzz import process, fuzz
 
 # Raw data loaded above (df1 and df2)
 
@@ -122,11 +109,13 @@ df1_unmatched_rows["Match_Type"] = "Unmatched"
 
 final_with_unmatched = pd.concat([final, df1_unmatched_rows], ignore_index=True)
 
-final_with_unmatched.to_csv("jobs_unified.csv", index=False)
+processed_dir = Path("data/processed")
+processed_dir.mkdir(parents=True, exist_ok=True)
 
-# %%
-df_integrated = pd.read_csv("jobs_unified.csv")
-df_integrated
+output_path = processed_dir / "jobs_unified.csv"
+final_with_unmatched.to_csv(output_path, index=False)
+
+print("Wrote processed file to:", output_path)
 
 
 
