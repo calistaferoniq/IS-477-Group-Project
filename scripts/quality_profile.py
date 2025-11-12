@@ -1,26 +1,33 @@
-import os, json, pandas as pd, glob
+from pathlib import Path
+import pandas as pd, json
 
-paths = [
-  "data/raw/ai_job_dataset.csv",
-  "data/raw/ai_job_market_insights.csv",
-  "data/processed/integrated.csv",   # ok if missing
+RAW_DIR = Path("data/raw")
+PROC_DIR = Path("data/processed")
+RESULTS = Path("results"); RESULTS.mkdir(parents=True, exist_ok=True)
+out = RESULTS / "quality_profile.json"
+
+targets = [
+    RAW_DIR/"ai_job_dataset.csv",
+    RAW_DIR/"ai_job_market_insights.csv",
+    PROC_DIR/"jobs_unified.csv",
 ]
-paths = [p for p in paths if os.path.exists(p)]
 
-profiles = {}
-for p in paths:
+report = {}
+for p in targets:
+    key = p.name
+    if not p.exists() or p.stat().st_size == 0:
+        report[key] = {"error": "missing or empty"}
+        continue
     try:
         df = pd.read_csv(p)
-        profiles[os.path.basename(p)] = {
+        report[key] = {
             "rows": int(len(df)),
             "cols": int(df.shape[1]),
             "null_cells": int(df.isna().sum().sum()),
             "dup_rows": int(df.duplicated().sum()),
         }
-    except pd.errors.EmptyDataError:
-        profiles[os.path.basename(p)] = {"error": "empty file (no columns)"}
+    except Exception as e:
+        report[key] = {"error": str(e)}
 
-os.makedirs("results", exist_ok=True)
-with open("results/quality_profile.json", "w") as f:
-    json.dump(profiles, f, indent=2)
-print("Wrote results/quality_profile.json")
+out.write_text(json.dumps(report, indent=2))
+print(f"Wrote {out}")
