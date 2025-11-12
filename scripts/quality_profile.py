@@ -1,27 +1,26 @@
-import pandas as pd
-from pathlib import Path
+import os, json, pandas as pd, glob
 
-ROOT = Path(__file__).resolve().parents[1]
-RAW = ROOT / "data" / "raw"
-PROC = ROOT / "data" / "processed"
-RES = ROOT / "results"
-RES.mkdir(exist_ok=True)
-
-targets = {
-    "raw_df1": RAW / "ai_job_dataset.csv",
-    "raw_df2": RAW / "ai_job_market_insights.csv",
-    "integrated": PROC / "integrated_ai_jobs.csv",
-}
+paths = [
+  "data/raw/ai_job_dataset.csv",
+  "data/raw/ai_job_market_insights.csv",
+  "data/processed/integrated.csv",   # ok if missing
+]
+paths = [p for p in paths if os.path.exists(p)]
 
 profiles = {}
-for name, p in targets.items():
-    df = pd.read_csv(p)
-    profiles[name] = {
-        "rows": len(df),
-        "columns": df.shape[1],
-        "nulls_by_col": df.isna().sum().sort_values(ascending=False).to_dict(),
-        "dupe_rows": int(df.duplicated().sum()),
-    }
+for p in paths:
+    try:
+        df = pd.read_csv(p)
+        profiles[os.path.basename(p)] = {
+            "rows": int(len(df)),
+            "cols": int(df.shape[1]),
+            "null_cells": int(df.isna().sum().sum()),
+            "dup_rows": int(df.duplicated().sum()),
+        }
+    except pd.errors.EmptyDataError:
+        profiles[os.path.basename(p)] = {"error": "empty file (no columns)"}
 
-pd.Series(profiles).to_json(RES / "quality_profile.json", indent=2)
-print("Saved results/quality_profile.json")
+os.makedirs("results", exist_ok=True)
+with open("results/quality_profile.json", "w") as f:
+    json.dump(profiles, f, indent=2)
+print("Wrote results/quality_profile.json")
