@@ -18,8 +18,8 @@ We’re curating and integrating two **AI/ML job-market datasets** to understand
 
 IS-477-Group-Project/
 ├─ data/
-│  ├─ raw/                         # target home for source CSVs  (has .gitkeep; CSVs not moved yet)
-│  ├─ processed/                   # cleaned/integrated outputs   (has .gitkeep)
+│  ├─ raw/                         # target home for source CSVs 
+│  ├─ processed/                   # cleaned/integrated outputs   
 │  └─ hashes/                      # integrity + provenance
 │     ├─ ai_job_dataset.csv.sha256
 │     ├─ ai_job_market_insights.csv.sha256
@@ -29,14 +29,13 @@ IS-477-Group-Project/
 ├─ results/                        # EDA/quality reports (scaffolded)
 ├─ scripts/                        # pipeline scripts (scaffolded)
 ├─ ProjectPlan.md
-├─ StatusReport.md                 # this interim report
-├─ ai_job_dataset.csv              # currently at repo root (to be moved to data/raw/)
-└─ ai_job_market_insights.csv      # currently at repo root (to be moved to data/raw/)
+└─ StatusReport.md                 # this interim report
 
 ````
 
 **Evidence already in repo**
 - **Integrity + provenance:** SHA-256 checksums and acquisition logs for both CSVs under `data/hashes/`.
+- **Integration:** integration script and schema drafts in appropriate folders
 - **Project hygiene:** Standard data science layout scaffolded; issues created for M3 tasks; release created for the **Project Plan**.
 
 ---
@@ -69,11 +68,8 @@ We successfully completed and submitted our full Project Plan in Github repo and
 
 ## 4) Data sources & provenance (current)
 
-- **`ai_job_dataset.csv`** — in repo; **hash + acquisition log present** under `data/hashes/`.  
-  **Next:** Move to `data/raw/` and append `license_name` and `license_url` in the acquisition log.
-
-- **`ai_job_market_insights.csv`** — in repo; **hash + acquisition log present** under `data/hashes/`.  
-  **Next:** Move to `data/raw/` and append license details in the acquisition log.
+- **`ai_job_dataset.csv`** — in `data/raw/`; **hash + acquisition log present** under `data/hashes/`.  
+- **`ai_job_market_insights.csv`** — in `data/raw/`; **hash + acquisition log present** under `data/hashes/`.  
 
 **Handling principles**
 - Keep `*_raw` text fields immutable; publish normalized counterparts separately.
@@ -88,9 +84,6 @@ We successfully completed and submitted our full Project Plan in Github repo and
 - Quality narratives: `quality_report_ai_job_dataset.md`, `quality_report_ai_job_market_insights.md`
 - Integrated view: `eda_integrated.html`, `quality_report_integrated.md`
 - Dedupe transparency: `dedupe_report.md` (candidate pairs, thresholds, accept/reject summary)
-
-**Status today**
-- Structure and issues in place; profiles and reports will be generated once the two CSVs are moved to `data/raw/` and scripts are run.
 
 ---
 
@@ -120,7 +113,6 @@ We successfully completed and submitted our full Project Plan in Github repo and
 
 **Pending**
 
-* Move both CSVs to `data/raw/` and update acquisition logs.
 * Generate **per-source EDA profiles** and **quality reports** into `results/`.
 * Commit initial **scripts** in `scripts/` and complete `requirements.txt`.
 * **Automation** once profiling, cleaning, and all previous steps are completed.
