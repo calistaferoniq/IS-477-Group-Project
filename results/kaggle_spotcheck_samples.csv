@@ -1,0 +1,6 @@
+Job_Title,Industry,Company_Size,Location,AI_Adoption_Level,Automation_Risk,Required_Skills,Salary_USD,Remote_Friendly,Job_Growth_Projection
+Cybersecurity Analyst,Retail,Large,Sydney,Medium,Medium,Communication,76744.30397016529,Yes,Decline
+HR Manager,Retail,Small,Paris,Low,High,Cybersecurity,98209.51687788912,Yes,Decline
+Marketing Specialist,Entertainment,Medium,New York,Medium,High,Sales,107067.72886658164,Yes,Decline
+Sales Manager,Manufacturing,Large,Paris,Medium,Low,Machine Learning,73376.6022839067,No,Growth
+Cybersecurity Analyst,Entertainment,Large,London,Medium,Low,Cybersecurity,79802.82924471433,No,Stable

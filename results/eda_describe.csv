@@ -1,0 +1,12 @@
+,Job_Title,Salary_USD,Education_Required,Years_Experience,AI_Adoption_Level,Automation_Risk,Remote_Friendly,Job_Growth_Projection,Match_Type
+count,20,20.0,20,20.0,10,10,10,10,20
+unique,20,,4,,3,3,2,2,7
+top,data scientist,,Bachelor,,Low,High,Yes,Decline,Unmatched
+freq,1,,9,,8,5,6,5,10
+mean,,115358.72048268649,,6.252201263097512,,,,,
+std,,2520.996467805282,,0.22051948300244137,,,,,
+min,,111321.18050065875,,5.954419889502763,,,,,
+25%,,113622.07984955737,,6.088136636925332,,,,,
+50%,,115625.17175287356,,6.245595879861378,,,,,
+75%,,116712.22326632935,,6.421485820942342,,,,,
+max,,120570.75824175825,,6.72279792746114,,,,,
