@@ -1,6 +1,8 @@
-pandas>=2.0
-numpy>=1.26
-matplotlib>=3.8
-rapidfuzz>=3.6
-requests>=2.32
-python-dateutil>=2.8
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.2
+scikit-learn==1.4.0
+rapidfuzz==3.6.1
+requests==2.32.3
+python-dateutil==2.9.0
+pathlib==1.0.1
