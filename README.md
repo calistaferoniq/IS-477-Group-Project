@@ -215,6 +215,8 @@ plt.show()
 
 **Final results are saved to /results/
 
+**Input and output data files can also be downloaded in this [Box folder](https://uofi.box.com/s/v7msqiyn9zhr9jcqw9zyi68ixvcegi5u)
+
 ## References: 
 - Bisma Sajjad. (2025). Global AI Job Market and Salary Trends 2025 [Dataset]. Kaggle. https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025 
 - UOM190346A. (2024). AI-Powered Job Market Insights [Dataset]. Kaggle. https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights
