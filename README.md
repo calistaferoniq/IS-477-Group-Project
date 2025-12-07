@@ -1,16 +1,16 @@
-**AI-Powered Job Market Analysis and Salary Prediction**
+# AI-Powered Job Market Analysis and Salary Prediction
 
-**Contributors**: 
+## Contributors: 
 - Faith Ma
 - Calista Gunawan
 
-**Summary**: 
+## Summary: 
 
 The primary goal of this project is to explore and analyze the impact of artificial intelligence (AI) adoption on the global job market. As AI continuously advances at an unprecedented rate, its influence on job market conditions has become increasingly difficult to ignore. This project aims to provide a data-driven perspective on how AI-driven technological advancements are shaping job availability, salary trends, and broader employment patterns across industries. Throughout this project, we integrate and examine two distinct datasets that include job listings, salary information, and indicators of AI adoption across organizations. Through a structured process of data acquisition, cleaning, integration, and feature engineering, we construct an integrated dataset that supports robust exploratory analysis and model development. Following this, we build a predictive model targeting salary as the key outcome variable, leveraging the integrated features to better understand which job and company attributes have the greatest influence on salary levels.
 
 The motivation for this project comes from the rapidly evolving nature of the AI landscape and its transformative effects on nearly every sector of the economy. With millions of new graduates and experienced professionals in the job market at any moment, a landscape shifting faster than traditional education and existing systems can adapt can be daunting. The emergence of generative AI, automation tools, and AI-enhanced workflows has accelerated changes in hiring practices, job responsibilities, and the very definition of certain roles and industries. Understanding these dynamics is becoming a practical necessity for job seekers striving to remain competitive, employers formulating long-term workforce development strategies, and policymakers who create the very labor guidelines that regulate the landscape. This project thus aims to build a transparent, reproducible workflow that captures these dynamics through data science methods and AI-powered analytical tools. All steps taken to perform this analysis are thoroughly documented and shared on GitHub to enable collaboration, reproducibility, and future exploration by other researchers and practitioners.
 
-This project addresses the following core research questions:
+This project addresses the following **core research questions**:
 
 - What are the primary job attributes and external factors that influence salary levels and job availability in an AI-driven economy?
 - How accurately can AI models predict salary ranges based on job descriptions, industry sectors, and geographical location?
@@ -22,11 +22,11 @@ Our preliminary findings show encouraging results in identifying key drivers of 
 
 Although the specific analytical outcomes cannot be directly applied to real-world labor markets due to the constraints of synthetic input data and limited observations, the overall methodology remains valuable. The workflow established through this project, including dataset integration, exploratory analysis, feature engineering, and model development, lays a strong foundation for future work. With richer datasets and more granular labor market information, this approach could be extended to develop more accurate predictive models and deeper analyses of AI’s evolving role in shaping workforce outcomes.
 
-**Data profile**: 
+## Data profile: 
 
 This project uses two publicly available datasets from Kaggle that focus on the relationship between artificial intelligence (AI) and global labor market trends. Both datasets are synthetic but created to mirror realistic job market patterns, making them suitable for exploratory analysis, dataset integration, and predictive modeling in an educational research context.
 
-1. AI-Powered Job Market Insights Dataset
+1. **AI-Powered Job Market Insights Dataset**
 - Source: Kaggle (https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights) 
 - Format: CSV
 
@@ -34,7 +34,7 @@ The AI-Powered Job Market Insights dataset provides detailed job listings annota
 
 A key strength of this dataset is the inclusion of explicit AI adoption and automation risk indicators, which allow for segmenting industries by technological maturity. The dataset uses categorical and numeric fields to approximate how different sectors may be affected by AI integration, offering valuable inputs for both exploratory data analysis and predictive modeling. Although entirely synthetic, the dataset is modeled after real-world labor analytics, making it a useful tool for studying AI’s influence on job design and workforce requirements.
 
-2. Global AI Job Market & Salary Trends 2025 Dataset
+2. **Global AI Job Market & Salary Trends 2025 Dataset**
 - Source: Kaggle (https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025) 
 - Formats: CSV and JSON
 
@@ -52,33 +52,33 @@ Despite their limitations, these datasets were selected because real-world alter
 
 Ultimately, while the results derived from these datasets cannot be applied directly to real-market conditions, they provide an effective framework for examining AI-related labor trends and for experimenting with predictive modeling approaches within a controlled, ethical environment.
 
-**Data quality**: 
+## Data quality: 
 
 The quality of the data used in this project can be evaluated across four commonly accepted dimensions of data quality: *accuracy, completeness, timeliness, and consistency*. Assessing each dimension provides insight into the reliability and usability of the datasets and helps clarify the limitations that influence how the results of this analysis should be interpreted. Because both datasets are synthetically generated, the overall expectations around quality differ from those applied to real-world, observational data. Nonetheless, evaluating quality across these dimensions remains essential for determining the validity and scope of any conclusions drawn from the data.
 
-1. Data accuracy: 
+1. **Data accuracy**: 
 Accuracy refers to how closely the data reflects the true values or “ground truth” it is meant to represent. In traditional datasets derived from surveys, scraped job postings, or employer-reported information, accuracy may be compromised by human error, reporting biases, transcription mistakes, or inconsistent data entry. In contrast, the datasets used in this project were synthetically created, which greatly reduces the likelihood of such errors. On initial inspection, syntactic accuracy, which is correctness in formatting, structure, and value types, was consistently high. All numeric fields appeared within plausible ranges, categorical variables adhered to expected labels, and no malformed or contradictory records were encountered. However, while syntactic accuracy was strong, semantic accuracy, defined as the degree to which values reflect real-world labor conditions, cannot be guaranteed. The values may appear plausible, but they do not correspond to actual job listings or salary distributions. This distinction is important because the model’s performance reflects internal coherence within the synthetic data rather than accuracy against real market conditions.
-2. Data completeness: 
+2. **Data completeness**: 
 Completeness assesses the extent to which the datasets contain all necessary values for each record and whether important fields include missing entries. Both datasets demonstrated exceptionally high completeness. There were no null values, missing fields, or incomplete records requiring removal or imputation. This level of completeness simplified cleaning and preparation tasks and allowed modeling and analysis to proceed without concern for gaps or missing information. In real-world data, missingness often reflects important structural or environmental factors. For example, employers may withhold salary ranges or reporting may vary widely across regions. With synthetic data, however, completeness is artificially perfect and does not reflect the irregularities typical of real labor datasets. While this is beneficial for instructional purposes, it limits realism.
-3. Data timeliness: 
+3. **Data timeliness**: 
 Timeliness captures how current, relevant, and up-to-date the data is in relation to real-world conditions. In this dimension, the datasets score poorly. While the creators of the synthetic datasets suggest that the values approximate current and near-future job market conditions, there is no mechanism for routine updates or validation against evolving labor trends. AI adoption, job availability, and salary ranges shift quickly, sometimes within months, especially in technology-driven sectors. Because the datasets are static snapshots with hypothetical projections, their timeliness is inherently limited. This restricts the applicability of findings to real-time market analyses or longitudinal modeling.
-4. Data consistency: 
+4. **Data consistency**: 
 Consistency refers to the degree to which the data adheres to internal rules, schema definitions, and expected relationships. Both datasets demonstrated high consistency, with uniform variable names, stable category definitions, and no conflicting or duplicated fields. There were no schema violations, contradictory attributes, or formatting discrepancies across files. This consistency is expected in synthetic datasets, as they are typically generated programmatically using stable templates. However, the absence of inconsistencies again highlights the difference between synthetic and empirical datasets, where inconsistencies often signal meaningful system-level issues.
 
 Overall, the synthetic nature of the datasets results in uniformly high scores in accuracy, completeness, and consistency, while timeliness remains a clear limitation. Although these qualities make the data suitable for educational use, exploratory modeling, and demonstration of analytical workflows, they also mean that the findings cannot be generalized to real-world job markets. The data supports methodological learning but cannot substitute for genuine labor market analytics.
 
-**Findings**:
+## Findings:
 
 Upon integration of the two datasets, exploratory analysis and model development revealed several meaningful findings regarding both the structure of the data and the performance of the predictive model. The integrated dataset contains 20 observations and 9 features. While such a dataset may be sufficient for demonstrating workflow steps or conducting preliminary exploration, it is not adequate for building a reliable or generalizable machine learning model. The small sample size limits the ability to detect real patterns and increases the likelihood that the model will overfit or produce unstable performance metrics. This limitation is further compounded by skewed feature distributions. For example, “AI_Adoption_Level” is concentrated heavily in the “Low” category, and “Automation_Risk” is similarly skewed toward “High,” with other categories underrepresented. These imbalances reduce the dataset’s capacity to support meaningful comparisons across categories.
 
 Descriptive statistics for Salary_USD provide additional insight into these concerns. The mean salary is 115358.72, with a minimum of 111321.18, a maximum of 120570.75, and a standard deviation of only 2520.99. This extremely narrow range raises questions about the variability of the integrated salary data. The limited spread is likely a result of the averaging method used during dataset merging as well as the synthetic nature of the input data. Ideally, salaries should vary based on job title, industry, location, and experience. In this dataset, however, the small variance indicates that these differences were either lost or not well represented during integration. As seen in the salary distribution visualization, the data displays almost no natural dispersion, which is a significant challenge for model development. Models trained under such conditions cannot learn meaningful relationships because the target variable barely changes across observations.
 
 To evaluate how the available features relate to salary despite these limitations, a Random Forest Regressor was trained using “Years_Experience” and the categorical features "Education_Required", "AI_Adoption_Level", "Automation_Risk", "Remote_Friendly", and "Job_Growth_Projection". The resulting model produced a test mean absolute percentile error of 0.01311, which suggests an average prediction error of just 1.3 percent. If interpreted without consideration of the underlying data limitations, this result might imply strong model performance. However, given the narrow salary distribution, the model is not required to predict across a wide range of values. Even simple heuristics, such as predicting the overall mean salary, would likely yield similar error rates. As a result, the model’s apparent accuracy is misleading. The performance metric reflects the model’s ability to reproduce a nearly constant value rather than its ability to learn meaningful salary determinants.
-The small test dataset, consisting of only three observations, further restricts the reliability of performance assessment. With so few samples, a single prediction has a large impact on the calculated error, and variability across repeated tests would likely be substantial. The prediction error distribution, shown in the accompanying figure, illustrates minimal deviation between predicted and true values, but this stability is more indicative of limited variability in the data than of genuine predictive power.
+The small test dataset, consisting of only three observations, further restricts the reliability of performance assessment. With so few samples, a single prediction has a large impact on the calculated error, and variability across repeated tests would likely be substantial. The prediction error distribution, shown in the prediction_error_distribution visualization, illustrates minimal deviation between predicted and true values, but this stability is more indicative of limited variability in the data than of genuine predictive power.
 
 Overall, while the model produces numerically impressive metrics, the lack of variation in the target variable, the small number of observations, and the skewed feature distributions all limit the interpretability and practical value of the results. These findings highlight the need for richer, more diverse, and more representative datasets to support meaningful salary prediction and labor market analysis.
 
-**Future work**:
+## Future work:
 
 This project highlighted a central theme that is fundamental to any data-driven analysis: the quality of the input data ultimately determines the quality and trustworthiness of the output. Throughout the integration, exploration, and modeling stages, several challenges emerged that highlight the need for stronger data foundations in future iterations of this work. Reliable, well-structured, and representative data is necessary to produce interpretations that can withstand second-opinions, support decision-making, and generalize to real-world environments.
 
@@ -94,11 +94,11 @@ Finally, the project raises important ethical and societal considerations. Real-
 
 In summary, future extensions of this work should prioritize richer, more reliable datasets; improved integration methods; more rigorous evaluation; and ethical safeguards to ensure that the insights generated are both meaningful and responsible.
 
-**Reproducing**: 
+## Reproducing: 
 
 This section outlines the complete sequence of steps required to reproduce the data integration, exploratory analysis, and model development performed in this project. The instructions below assume a basic working knowledge of Python and access to the same datasets used in the analysis.
 
-Environment Setup: The analysis was conducted using Python 3.13 executed through a standard Python script environment. To reproduce the work, install the following libraries:
+**Environment Setup**: The analysis was conducted using Python 3.13 executed through a standard Python script environment. To reproduce the work, install the following libraries:
 - numpy
 - pandas
 - matplotlib
@@ -111,7 +111,7 @@ Environment Setup: The analysis was conducted using Python 3.13 executed through
 These libraries can be installed using: 
 - pip install numpy pandas matplotlib scikit-learn rapidfuzz requests python-dateutil pathlib
 
-Raw Data:
+**Raw Data**:
 This project uses two public Kaggle datasets:
 
 1. Global AI Job Market & Salary Trends 2025 (https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025) 
@@ -128,7 +128,7 @@ Both files should be downloaded manually or through the Kaggle API, then placed 
 - df1 = pd.read_csv("data/raw/ai_job_dataset.csv")
 - df2 = pd.read_csv("data/raw/ai_job_market_insights.csv")
 
-Data Cleaning and Preprocessing: 
+**Data Cleaning and Preprocessing**: 
 
 1. Select the necessary columns from df1:
 - job_title
@@ -148,7 +148,7 @@ Data Cleaning and Preprocessing:
 4. Case-normalize the job_title column.
 5. Remove duplicates from both datasets.
 
-Dataset Integration Procedure:
+**Dataset Integration Procedure**:
 
 1. Perform exact matching on job titles using an inner join
 - exact = pd.merge(df1_unique, df2_unique, on="Job_Title", how="inner")
@@ -156,10 +156,10 @@ Dataset Integration Procedure:
 3. Combine exact and approximate matches into a unified dataset
 4. Prefer df1 when values conflict
 5. Create a “Match_Type” column to label each row as an “Exact” or “Approximate” match
-6. Save the integrated dataset as “/data/jobs_unified.csv”
+6. Save the integrated dataset as “/data/processed/jobs_unified.csv”
 - The unified dataset contains 20 rows and 9 features
 
-Exploratory Data Analysis:
+**Exploratory Data Analysis**:
 1. Salary distribution histogram
 
 data = df["Salary_USD"]
@@ -196,7 +196,7 @@ plt.show()
 
 - Visualizations can be saved in /images/ folder
 
-Model Development Workflow:
+**Model Development Workflow**:
 
 1. Split integrated dataset
 - X_train, X_test, y_train, y_test = train_test_split(df, df["Salary_USD"], test_size=0.2, random_state=15)
@@ -212,9 +212,10 @@ Model Development Workflow:
 7. Generate predictions on test set and evaluate mean absolute percentile error (MAPE)
 
 *Scripts used for integration and modeling are stored in /scripts/
+
 **Final results are saved to /results/
 
-**References**: 
+## References: 
 - Bisma Sajjad. (2025). Global AI Job Market and Salary Trends 2025 [Dataset]. Kaggle. https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025 
 - UOM190346A. (2024). AI-Powered Job Market Insights [Dataset]. Kaggle. https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights
 - Python Software Foundation. (2023). Python: Version 3.13 Documentation. https://docs.python.org/3.13/
