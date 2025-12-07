@@ -61,3 +61,14 @@ pipeline.fit(X_train,y_train)
 # test metrics
 y_pred = pipeline.predict(X_test)
 test_mape = mean_absolute_percentage_error(y_test,y_pred)
+
+# error distribution
+errors = y_pred - y_test
+
+plt.figure(figsize=(10,5))
+plt.hist(errors, bins=5, edgecolor='black')
+plt.title("Prediction Error Distribution")
+plt.xlabel("Prediction Error (Predicted - Actual)")
+plt.ylabel("Count")
+plt.axvline(0, color='red', linestyle='--')
+plt.show()
