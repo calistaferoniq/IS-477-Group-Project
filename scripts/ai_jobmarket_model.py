@@ -1,3 +1,21 @@
+# imports
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# model imports
+from sklearn.ensemble import RandomForestRegressor
+
+# preprocessing imports
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import train_test_split
+
+from sklearn.metrics import mean_absolute_percentage_error
+
 # load integrated data
 df = pd.read_csv("data/processed/jobs_unified.csv")
 df.head()
