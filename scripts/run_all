@@ -1,0 +1,27 @@
+rule run_all:
+    input:
+        "data/processed/jobs_unified.csv",
+        "images/prediction_error_distribution.png",
+        "images/salary_usd_distribution.png"
+
+rule integrate_datasets:
+    output:
+        "data/processed/jobs_unified.csv"
+    shell:
+        "python scripts/integrate_datasets.py"
+
+rule ai_jobmarket_model:
+    input:
+        "data/processed/jobs_unified.csv"
+    output:
+        "images/prediction_error_distribution.png"
+    shell:
+        "python scripts/ai_jobmarket_model.py"
+
+rule generate_salary_dist_plot:
+    input:
+        "data/processed/jobs_unified.csv"
+    output:
+        "images/salary_usd_distribution.png"
+    shell:
+        "python scripts/generate_salary_dist_plot.py"
