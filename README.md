@@ -213,8 +213,6 @@ plt.show()
 
 *Scripts used for integration and modeling are stored in /scripts/
 
-**Final results are saved to /results/
-
 **Input and output data files can also be downloaded in this [Box folder](https://uofi.box.com/s/v7msqiyn9zhr9jcqw9zyi68ixvcegi5u)
 
 ## References: 
